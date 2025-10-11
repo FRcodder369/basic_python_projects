@@ -1,0 +1,95 @@
+import random
+import time
+
+import pygame
+
+pygame.init()
+pygame.mixer.init()
+pygame.mixer.music.load('background.mp3')
+pygame.mixer.music.play(-1)
+
+time.sleep(5)
+print('you wake up alone in the middle of a forest')
+time.sleep(3)
+print('you walking around but no ones there')
+time.sleep(2)
+print('you hearing wild animals\'s sounds')
+time.sleep(2)
+print('you find an abandoned house')
+time.sleep(2)
+print('will you go inside(yes/no)?')
+time.sleep(1)
+house = input('>>')
+if house == 'no':
+    print('animals eat you and you are dead')
+    quit()
+
+print('you go in the house')
+time.sleep(1)
+print('door shuts behind you')
+time.sleep(1)
+print('will you try to open it and go out (yes/no)?')
+time.sleep(1)
+out = input('>>')
+if out == 'yes':
+    print('animals eat you and you are dead')
+    quit()
+
+print('you search the house')
+time.sleep(1)
+print('suddenly you hear a mouning sound')
+time.sleep(1)
+print('will you go towards it (yes/no)?')
+time.sleep(1)
+sound = input('>>')
+if sound == 'yes':
+    print('its coming from the corner, an old man bleeding')
+    time.sleep(2)
+    print('will you help him?')
+    time.sleep(1)
+    help = input('>>')
+    if help == 'yes':
+        print('he thanks you and says...')
+        time.sleep(2)
+        print('one shall not go in the house of darkness...')
+        time.sleep(3)
+print('you keep waling')
+time.sleep(1)
+print('passing a long aisle before you')
+time.sleep(2)
+print('at the end you find two doors in front of you')
+time.sleep(2)
+print('red and black')
+time.sleep(2)
+print('which room do you choose (red/black)? ')
+time.sleep(1)
+room = input('>>')
+if room == 'red':
+    print('at the room you find every answers you wanted to know')
+    quit()
+
+elif room == 'black':
+    pygame.mixer.music.stop()
+    pygame.mixer.music.load('room.mp3')
+    pygame.mixer.music.play(13)
+    print('you hear scary noises')
+    time.sleep(2)
+    print('door locks behind you')
+    time.sleep(2)
+    print('noises getting closer')
+    time.sleep(2)
+    print('and closer')
+    time.sleep(2)
+    print('and closer.')
+    time.sleep(2)
+    print('and closer..')
+    time.sleep(3)
+    print('and closer...')
+    pygame.mixer.music.load('scream.mp3')
+    pygame.mixer.music.play(3)
+    time.sleep(3)
+    print('and now you\'re dead')
+    quit()
+
+
+
